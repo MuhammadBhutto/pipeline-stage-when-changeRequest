@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			//when{	changeRequest title:"when-pr"	}
-		           when { changeRequest target: 'master' }
+		           when { changeRequest () }
 		
             steps {                
                 echo 'Hello World changing request'
