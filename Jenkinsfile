@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			//when{	changeRequest title:"when-pr"	}
-		when { changeRequest authorEmail: "muhammad.bhutto@gmail.com" }
+		           when { changeRequest target: 'master' }
 		
             steps {                
                 echo 'Hello World changing request'
